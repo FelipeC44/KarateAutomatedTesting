@@ -789,3 +789,555 @@ src/test/java/features/usuarios/GetUsuarios.feature:18
 }
 
 12:12:57.168 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:features/usuarios/GetUsuarios.feature
+12:57:29.266 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:57:29.274 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661702249273
+12:57:29.311 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^Cadastrar usuario com sucesso com body no corpo do teste$
+12:57:30.615 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:57:30.685 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:8
+* def body =
+"""
+"nome": "Felipe Cardoso",
+"email": "felipeC@qa.com.br",
+"password": "teste",
+"administrador": "true"
+"""
+js failed:
+>>>>
+01: "nome": "Felipe Cardoso",
+02: "email": "felipeC@qa.com.br",
+03: "password": "teste",
+04: "administrador": "true"
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:6 Expected ; but found :
+"nome": "Felipe Cardoso",
+      ^
+Unnamed:2:7 Expected ; but found :
+"email": "felipeC@qa.com.br",
+       ^
+Unnamed:3:10 Expected ; but found :
+"password": "teste",
+          ^
+Unnamed:4:15 Expected ; but found :
+"administrador": "true"
+               ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.evalAndCastTo(ScenarioEngine.java:1412)
+
+src/test/java/features/usuarios/PostUsuario.feature:8
+12:57:31.605 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+12:59:57.793 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:59:57.799 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661702397798
+12:59:57.831 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^Cadastrar usuario com sucesso com body no corpo do teste$
+12:59:58.925 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:59:59.474 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 95
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Felipe Cardoso","email":"felipeC@qa.com.br","password":"teste","administrador":"true"}
+
+13:00:21.831 [main] DEBUG com.intuit.karate - response time in milliseconds: 22346
+1 < 201
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 17bfdb52-ec24-413f-bddd-6095182aa37b
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: c0084b0bdae2f4b4c13392055aa6e9fd;o=1
+1 < Date: Sun, 28 Aug 2022 16:00:21 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "sFhxoikSC5gwS8Sw"
+}
+
+13:00:22.979 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+13:04:53.949 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:04:53.952 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661702693951
+13:04:53.983 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 37 - ^Listar usuarios por id apos cadastro$
+13:04:55.657 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:04:56.130 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?id=sFhxoikSC5gwS8Sw
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:05:17.817 [main] DEBUG com.intuit.karate - response time in milliseconds: 21681
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: d1589984-45fc-42d0-a3b8-137bcc519d23
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: b5b9965181126eb5397a2950ef2b3fa5
+1 < Date: Sun, 28 Aug 2022 16:05:17 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 36
+{
+    "id": "id não é permitido"
+}
+
+13:05:17.829 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/GetUsuarios.feature:41
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 21681, url: https://serverest.dev/usuarios?id=sFhxoikSC5gwS8Sw, response: 
+{
+    "id": "id não é permitido"
+}
+src/test/java/features/usuarios/GetUsuarios.feature:41
+13:05:18.910 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/GetUsuarios.feature
+13:05:44.027 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:05:44.031 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661702744030
+13:05:44.058 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 37 - ^Listar usuarios por id apos cadastro$
+13:05:44.998 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:05:45.437 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?_id=sFhxoikSC5gwS8Sw
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:06:07.013 [main] DEBUG com.intuit.karate - response time in milliseconds: 21573
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 44684519-2e4c-4ab2-8bc6-ed36815b9255
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 048237ad3665a436c58b8443d1ef7951;o=1
+1 < Date: Sun, 28 Aug 2022 16:06:06 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 256
+{
+    "quantidade": 1,
+    "usuarios": [
+        {
+            "nome": "Felipe Cardoso",
+            "email": "felipeC@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "sFhxoikSC5gwS8Sw"
+        }
+    ]
+}
+
+13:06:07.623 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/GetUsuarios.feature
+13:40:07.144 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:40:07.155 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661704807154
+13:40:07.204 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+13:40:08.730 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:40:08.798 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuario.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuario.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+13:40:09.621 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+13:42:49.185 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:49.189 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661704969188
+13:42:49.217 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+13:42:50.236 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:50.298 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuario.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuario.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+13:42:51.043 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+13:49:21.913 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:49:21.917 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661705361917
+13:49:21.964 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+13:49:23.287 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:49:23.342 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuario.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuario.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+13:49:24.173 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+13:50:52.808 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:50:52.813 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661705452812
+13:50:52.837 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+13:50:53.853 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:50:53.905 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read(classpath:/jsons/usuario.json)
+js failed:
+>>>>
+01: read(classpath:/jsons/usuario.json)
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:14 Expected , but found :
+read(classpath:/jsons/usuario.json)
+              ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.evalAndCastTo(ScenarioEngine.java:1412)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+13:50:54.589 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+13:51:17.094 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:51:17.099 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661705477098
+13:51:17.128 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+13:51:18.006 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:51:18.055 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuario.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuario.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+13:51:18.757 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+14:00:24.823 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:00:24.829 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661706024828
+14:00:24.863 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+14:00:25.899 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:00:25.946 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuario.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuario.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+14:00:26.696 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+14:00:36.980 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:00:36.986 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661706036984
+14:00:37.021 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+14:00:38.180 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:00:38.249 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuario.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuario.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+14:00:38.988 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+14:04:49.622 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:04:49.627 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661706289627
+14:04:49.658 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 43 - ^Verificar o conteudo do response$
+14:04:50.849 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:04:51.423 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:04:56.520 [main] DEBUG com.intuit.karate - response time in milliseconds: 5094
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: acfefedd-702c-4da5-a428-503964527eab
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: d94717594e79bf28aea7a75498a9691f
+1 < Date: Sun, 28 Aug 2022 17:04:56 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 253
+{
+    "quantidade": 1,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        }
+    ]
+}
+
+14:04:56.573 [main] WARN  com.intuit.karate - did not evaluate to map response.quantidade != '#null': [type: BOOLEAN, value: true]
+14:04:56.574 [main] WARN  com.intuit.karate - did not evaluate to map response.quantidade == '#number': [type: BOOLEAN, value: false]
+14:04:57.694 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/GetUsuarios.feature
+14:10:27.885 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:10:27.890 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661706627890
+14:10:27.931 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+14:10:29.647 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:10:29.696 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuarios.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuarios.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuarios.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+14:10:30.424 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+14:14:37.758 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:14:37.765 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661706877764
+14:14:37.800 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^Deletar um usuario com sucesso$
+14:14:38.960 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:14:39.402 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://serverest.dev/usuarios/0uxuPY0cbmQhpEz1
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:14:40.036 [main] DEBUG com.intuit.karate - response time in milliseconds: 629
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: d643b951-0f9c-4fa1-83b8-8c75c9bc9552
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: d100c4b32a75a7d6f5a59eff16efe4ab;o=1
+1 < Date: Sun, 28 Aug 2022 17:14:39 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 46
+{
+    "message": "Nenhum registro excluído"
+}
+
+14:14:40.103 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/DeleteUsuario.feature:10
+And match response.message == "Registro excluído com sucesso"
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Nenhum registro excluído'
+  'Registro excluído com sucesso'
+
+src/test/java/features/usuarios/DeleteUsuario.feature:10
+14:14:40.831 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/DeleteUsuario.feature
+14:27:31.342 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:27:31.347 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661707651346
+14:27:31.375 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^Deletar um usuario com sucesso$
+14:27:32.441 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:27:32.499 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/DeleteUsuario.feature:7
+* def id = call read(DeleteUsuario.feature@cadastrar)
+js failed:
+>>>>
+01: read(DeleteUsuario.feature@cadastrar)
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:26 Expected , but found error
+read(DeleteUsuario.feature@cadastrar)
+                          ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:2056)
+
+src/test/java/features/usuarios/DeleteUsuario.feature:7
+14:27:33.281 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/DeleteUsuario.feature
+14:28:16.784 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:28:16.790 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661707696789
+14:28:16.822 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^Deletar um usuario com sucesso$
+14:28:17.728 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:28:17.778 [main] INFO  c.intuit.karate.core.FeatureRuntime - src/test/java/features/usuarios/DeleteUsuario.feature - call by tag at line 17: cadastrar
+14:28:17.796 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/DeleteUsuario.feature:20
+* set body.email = 'teste'+now()+'@qa.com.br'
+variable is null or not set 'body'
+src/test/java/features/usuarios/DeleteUsuario.feature:20
+14:28:17.796 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/DeleteUsuario.feature:7
+* def id = call read('DeleteUsuario.feature@cadastrar')
+variable is null or not set 'body'
+src/test/java/features/usuarios/DeleteUsuario.feature:20
+src/test/java/features/usuarios/DeleteUsuario.feature:7
+14:28:18.613 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/DeleteUsuario.feature
+14:29:09.069 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:29:09.073 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661707749072
+14:29:09.099 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^Deletar um usuario com sucesso$
+14:29:10.132 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:29:10.183 [main] INFO  c.intuit.karate.core.FeatureRuntime - src/test/java/features/usuarios/DeleteUsuario.feature - call by tag at line 17: cadastrar
+14:29:10.204 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/DeleteUsuario.feature:20
+* set body.email = 'teste'+now()+'@qa.com.br'
+variable is null or not set 'body'
+src/test/java/features/usuarios/DeleteUsuario.feature:20
+14:29:10.206 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/DeleteUsuario.feature:7
+* def id = call read('DeleteUsuario.feature@cadastrar')
+variable is null or not set 'body'
+src/test/java/features/usuarios/DeleteUsuario.feature:20
+src/test/java/features/usuarios/DeleteUsuario.feature:7
+14:29:11.055 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/DeleteUsuario.feature
+14:30:49.583 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:30:49.588 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661707849583
+14:30:49.613 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 16 - ^Cadastrar para deletar$
+14:30:50.587 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:30:50.649 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/DeleteUsuario.feature:19
+* set body.email = 'teste'+now()+'@qa.com.br'
+variable is null or not set 'body'
+src/test/java/features/usuarios/DeleteUsuario.feature:19
+14:30:51.436 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/DeleteUsuario.feature
+14:40:13.770 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:40:13.774 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661708413772
+14:40:13.814 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 16 - ^Cadastrar para deletar$
+14:40:14.753 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:40:14.788 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/DeleteUsuario.feature:4
+* url url
+js failed:
+>>>>
+01: url
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "url" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/DeleteUsuario.feature:4
+14:40:15.550 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/DeleteUsuario.feature
+14:41:24.126 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:41:24.130 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661708484129
+14:41:24.150 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7 - ^Listar todos os usuarios cadastrados$
+14:41:24.983 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:41:25.021 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/GetUsuarios.feature:4
+* url url
+js failed:
+>>>>
+01: url
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "url" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/GetUsuarios.feature:4
+14:41:25.654 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/GetUsuarios.feature
+14:43:32.248 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:43:32.255 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661708612254
+14:43:32.279 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7 - ^Listar todos os usuarios cadastrados$
+14:43:33.525 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:43:34.066 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:36.186 [main] DEBUG com.intuit.karate - response time in milliseconds: 2116
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: d32174b3-8e4c-4893-af9a-744292f8dac4
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: cbe07334d6cb4f0a59027952c4adf725;o=1
+1 < Date: Sun, 28 Aug 2022 17:43:36 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 464
+{
+    "quantidade": 2,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "8mlMiZYoESEubf9o"
+        },
+        {
+            "nome": "Nome teste",
+            "email": "tete1e@test.com",
+            "password": "12345678",
+            "administrador": "true",
+            "_id": "QFSJAOYFYozHRJGu"
+        }
+    ]
+}
+
+14:43:37.448 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/GetUsuarios.feature

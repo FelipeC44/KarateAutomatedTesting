@@ -34,3 +34,15 @@ Feature: Metodo get para listar usuarios cadastrados
     Then status 200
     And match response.usuarios[*].nome contains 'Fulano da Silva'
 
+  Scenario: Listar usuarios por id apos cadastro
+    Given path '/usuarios'
+    And params {_id: 'sFhxoikSC5gwS8Sw'}
+    When method Get
+    Then status 200
+
+  Scenario: Verificar o conteudo do response
+    Given path '/usuarios'
+    When method Get
+    Then status 200
+    And params response.quantidade != '#null'
+    And params response.quantidade == '#number'

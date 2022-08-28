@@ -9,9 +9,10 @@ function fn() {
     myVarName: 'someValue'
   }
   if (env == 'dev') {
+  config.url = 'https://serverest.dev';
     // customize
     // e.g. config.foo = 'bar';
-  } else if (env == 'e2e') {
+  } else if (env == 'hmg') {
     // customize
   }
   return config;
