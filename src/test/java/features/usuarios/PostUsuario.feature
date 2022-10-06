@@ -1,7 +1,7 @@
 Feature: Metodo post para cadastrar usuarios
 
   Background:
-    * url url
+    * url 'https://serverest.dev'
 
     Scenario: Cadastrar usuario com sucesso com body no corpo do teste
 
@@ -14,6 +14,7 @@ Feature: Metodo post para cadastrar usuarios
       "administrador": "true"
       }
       """
+
       Given path '/usuarios'
       And request body
       When method Post
@@ -23,7 +24,7 @@ Feature: Metodo post para cadastrar usuarios
       Scenario: Cadastrar usuario com sucesso com body em arquivo json
         * def now = function(){ return java.lang.System.currentTimeMillis() }
 
-        * def body = read('classpath:/jsons/usuarios.json')
+        * def body = read('classpath:/jsons/usuario.json')
         * set body.nome = 'julia'
         * set body.email = 'julia'+now()+'@qa.com.br'
         * set body.password = '123456'

@@ -17,6 +17,7 @@ Feature: Metodo delete para deletar usuarios
 
       * def now = function(){ return java.lang.System.currentTimeMillis() }
       * set body.email = 'teste'+now()+'@qa.com.br'
+      * print  email
       * def body =
       """
       {

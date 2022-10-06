@@ -3,46 +3,91 @@ Feature: Metodo get para listar usuarios cadastrados
   Background:
     * url 'https://serverest.dev'
 
-    @smoke
-    Scenario: Listar todos os usuarios cadastrados
-      Given path '/usuarios'
-      When method Get
-      Then status 200
-
-    Scenario: Listar usuarios por nome
-      Given path '/usuarios'
-      And params 'nome = Fulano da Silva'
-      When method Get
-      Then status 200
-
-    Scenario: Listar usuarios por nome e email
-      Given path '/usuarios'
-      And params {nome: 'Fulano da Silva', email: 'fulano@qa.com'}
-      When method Get
-      Then status 200
-
-    Scenario: Listar usuarios por nome e email validar nome o do usuario retornado
-      Given path '/usuarios'
-      And params {nome: 'Fulano da Silva', email: 'fulano@qa.com'}
-      When method Get
-      Then status 200
-      And match response.usuarios[0].nome == 'Fulano da Silva'
-
-  Scenario: Listar usuarios e verificar se algum usuario e fulano da silva
+  @smoke
+  Scenario: Listar todos os usuarios cadastrados
     Given path '/usuarios'
     When method Get
     Then status 200
-    And match response.usuarios[*].nome contains 'Fulano da Silva'
 
-  Scenario: Listar usuarios por id apos cadastro
+    @regression
+  Scenario: Listar usuarios por nome
     Given path '/usuarios'
-    And params {_id: 'sFhxoikSC5gwS8Sw'}
+    And params 'nome = Fulano da Silva'
     When method Get
     Then status 200
+
+  Scenario: Listar usuarios por nome e email
+    Given path '/usuarios'
+    And params {nome: 'Fulano da Silva', email: 'fulano@qa.com'}
+    When method Get
+    Then status 200
+
+  Scenario: Listar usuario por nome e email e validar o nome do usuario retornado
+    Given path '/usuarios'
+    And params {nome:'luana assis', email:'luana@qa.com'}
+    When method get
+    Then status 200
+    And match response.usuarios[0].nome == 'luana assis'
+
+  Scenario: Listar todos usuarios e verificar se algum e o usuario luana assis
+    Given path '/usuarios'
+    When method get
+    Then status 200
+    And match response.usuarios[*].nome contains 'luana assis'
+
+
+  Scenario: Listar todos usuarios e verificar se existe fulado e luana
+    Given path '/usuarios'
+    When method get
+    Then status 200
+    And match response.usuarios[*].nome == ['Fulano da Silva', 'luana assis']
+
+
+  Scenario: Listar todos usuarios e verificar se existe fulado e luana utilizando contains
+    Given path '/usuarios'
+    When method get
+    Then status 200
+    And match response.usuarios[*].nome contains ['luana assis','Fulano da Silva']
+
 
   Scenario: Verificar o conteudo do response
     Given path '/usuarios'
-    When method Get
+    When method get
     Then status 200
-    And params response.quantidade != '#null'
-    And params response.quantidade == '#number'
+    And match response.quantidade != '#null'
+    And match response.quantidade == '#number'
+
+
+  Scenario: Validar algum retorno do header do response
+    Given path '/usuarios'
+    When method get
+    Then status 200
+    And match header content-type contains 'application/json'
+
+
+  Scenario: Verificar response completo
+    Given path '/usuarios'
+    When method get
+    Then status 200
+    And match response contains
+    """
+     {
+    "quantidade": 2,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "luana assis",
+            "email": "luana@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "cZqQbDF6JrA9xCoW"
+        }
+    ]
+}
+   """

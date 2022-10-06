@@ -1341,3 +1341,1394 @@ src/test/java/features/usuarios/GetUsuarios.feature:4
 }
 
 14:43:37.448 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/GetUsuarios.feature
+13:48:45.002 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:48:45.008 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661791725008
+13:48:45.047 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+13:48:46.479 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:48:46.545 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:4
+* url url
+js failed:
+>>>>
+01: url
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "url" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:4
+13:48:47.496 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+13:51:21.000 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:51:21.004 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661791881004
+13:51:21.043 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^Cadastrar usuario com sucesso com body no corpo do teste$
+13:51:22.507 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:51:23.202 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 95
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Felipe Cardoso","email":"felipeC@qa.com.br","password":"teste","administrador":"true"}
+
+13:51:24.507 [main] DEBUG com.intuit.karate - response time in milliseconds: 1304
+1 < 201
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 505be7ca-d8c0-4ee1-84e1-1d0e055a8cd2
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 177b45b944aab1a37b0851b38d5d25a8;o=1
+1 < Date: Mon, 29 Aug 2022 16:51:23 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "1XLmAfd04cjOVW9W"
+}
+
+13:51:25.785 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+13:52:31.286 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:52:31.293 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661791951291
+13:52:31.335 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+13:52:37.245 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:52:37.313 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuarios.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuarios.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuarios.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+13:52:38.450 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+14:35:02.640 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:35:02.649 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661794502648
+14:35:02.704 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+14:35:08.674 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:35:08.748 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuarios.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuarios.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuarios.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+14:35:09.935 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+14:37:28.433 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:37:28.440 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661794648439
+14:37:28.483 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+14:37:29.852 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:37:29.920 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/json/usuarios.json')
+js failed:
+>>>>
+01: read('classpath:/json/usuarios.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /json/usuarios.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+14:37:35.033 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+14:38:47.326 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:38:47.333 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661794727332
+14:38:47.367 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+14:38:48.586 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:38:48.673 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuario.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuario.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+14:38:49.538 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+14:39:13.606 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:39:13.612 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661794753611
+14:39:13.648 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+14:39:14.761 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:39:14.820 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuario.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuario.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+14:39:15.673 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+20:15:36.120 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:15:36.124 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661814936123
+20:15:36.157 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^Cadastrar usuario com sucesso com body no corpo do teste$
+20:15:37.242 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:15:38.895 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 95
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Felipe Cardoso","email":"felipeC@qa.com.br","password":"teste","administrador":"true"}
+
+20:15:40.915 [main] DEBUG com.intuit.karate - response time in milliseconds: 2015
+1 < 201
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: f6248480-0e51-4dca-a8d7-721e9e6ce990
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 5bd6476b97364428ff4c9413f3b1e904;o=1
+1 < Date: Mon, 29 Aug 2022 23:15:39 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "XBNxDRenH8Wy9r7N"
+}
+
+20:15:41.858 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+20:16:01.845 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:16:01.851 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661814961850
+20:16:01.883 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+20:16:03.115 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:16:03.184 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuario.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuario.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+20:16:04.035 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+20:17:20.557 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:17:20.563 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1661815040562
+20:17:20.603 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+20:17:26.813 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:17:26.867 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuario.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuario.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+20:17:29.798 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+18:38:32.094 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:38:32.099 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1662068312097
+18:38:32.133 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Cadastrar usuario com sucesso com body em arquivo json$
+18:38:33.312 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:38:33.360 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:26
+* def body = read('classpath:/jsons/usuario.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuario.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:26
+18:38:34.021 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+19:13:49.334 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:13:49.338 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1665094429337
+19:13:49.354 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^Cadastrar usuario com sucesso com body no corpo do teste$
+19:13:50.771 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:13:51.213 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 95
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Felipe Cardoso","email":"felipeC@qa.com.br","password":"teste","administrador":"true"}
+
+19:13:51.837 [main] DEBUG com.intuit.karate - response time in milliseconds: 623
+1 < 201
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: d4aa7d05-a337-4859-9e8f-047eb8de6775
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 028f69fbbc82bccace32a6d2fe4cb1b2;o=1
+1 < Date: Thu, 06 Oct 2022 22:13:42 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "OjqsVRHxspcA0Gpg"
+}
+
+19:13:52.380 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+19:18:12.830 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:18:12.834 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1665094692833
+19:18:12.858 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 13 - ^Listar usuarios por nome$
+19:18:13.644 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:18:13.679 [main] WARN  com.intuit.karate - did not evaluate to map 'nome = Felipe Cardoso': [type: STRING, value: nome = Felipe Cardoso]
+19:18:13.969 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:18:14.605 [main] DEBUG com.intuit.karate - response time in milliseconds: 631
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 1fa1fff0-cc5b-47ef-82c0-f6683328b203
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: f37c4fb83af7ced2e01793ce0f82fdc3;o=1
+1 < Date: Thu, 06 Oct 2022 22:18:05 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 13321
+{
+    "quantidade": 62,
+    "usuarios": [
+        {
+            "nome": "Abbey36",
+            "email": "Bertrand.Boyle18@yahoo.com",
+            "password": "7GklY2RA9qswo4b",
+            "administrador": "true",
+            "_id": "0W0vxH4AJIRbp4Aq"
+        },
+        {
+            "nome": "Armani50",
+            "email": "Andre_Gulgowski@yahoo.com",
+            "password": "c0hCW7O83C_cOWo",
+            "administrador": "true",
+            "_id": "0dlwgTCVs1jxp1kR"
+        },
+        {
+            "nome": "Johnny35",
+            "email": "Haylie_OHara@gmail.com",
+            "password": "LU_Wf8Gq4Up1z7k",
+            "administrador": "true",
+            "_id": "0nX3dqxulyziBSDx"
+        },
+        {
+            "nome": "Teste Hotmail",
+            "email": "beltrano@hotmail.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "1DN9toOiAIiwR2TJ"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@a.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "1tRScth1Zolzr22n"
+        },
+        {
+            "nome": "Earl_Lakin",
+            "email": "Mary.Corkery87@yahoo.com",
+            "password": "JTozJbiPiTL2rnG",
+            "administrador": "true",
+            "_id": "3AcvhZqXy5DkP8Vn"
+        },
+        {
+            "nome": "ana",
+            "email": "ana@qa.com.br",
+            "password": "a",
+            "administrador": "true",
+            "_id": "3X09S6gRmkrLeASu"
+        },
+        {
+            "nome": "claudio",
+            "email": "teste@gmail.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "5ZGXrJJa9DNkajqk"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrana@qa.com.br",
+            "password": "tes",
+            "administrador": "true",
+            "_id": "5s0ExcFilcMFiAWJ"
+        },
+        {
+            "nome": "Pattie.Hand63",
+            "email": "Brett.Johns@gmail.com",
+            "password": "Q8VsfmyGs42AoCb",
+            "administrador": "true",
+            "_id": "5ytrcWUoJ1jiEhBa"
+        },
+        {
+            "nome": "Roxane.Toy73",
+            "email": "Jaylon_Schamberger48@gmail.com",
+            "password": "bTok6ZwIDY8afz9",
+            "administrador": "true",
+            "_id": "7jZIxpiTHgFd5Fn1"
+        },
+        {
+            "nome": "lala",
+            "email": "ll@la.com",
+            "password": "alal",
+            "administrador": "true",
+            "_id": "9ZRdjSmQLmJJ4Cfs"
+        },
+        {
+            "email": "beltro5@qa.com.br",
+            "nome": "dsfoif",
+            "password": "ksjfosdh",
+            "administrador": "true",
+            "_id": "AHVWe8EBq12D8ndo"
+        },
+        {
+            "nome": "Frederik29",
+            "email": "Alan.Bradtke18@yahoo.com",
+            "password": "X0wDwa6TmXAIWXb",
+            "administrador": "true",
+            "_id": "AJ5mjxE4mek7wzHL"
+        },
+        {
+            "nome": "Teste",
+            "email": "patriotaerfakeeee@gmail.com",
+            "password": "12345",
+            "administrador": "false",
+            "_id": "Af070F90fbYme43k"
+        },
+        {
+            "nome": "Evangeline_Harris",
+            "email": "Alaina37@hotmail.com",
+            "password": "0J5d4Y0gubpSK9o",
+            "administrador": "true",
+            "_id": "DY7F5CfZ17rb5Wbb"
+        },
+        {
+            "nome": "natalia qca",
+            "email": "nataliaqcao@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "EoqAeSaLaMpukpU5"
+        },
+        {
+            "nome": "aubrey.lebsack",
+            "email": "ramona.weissnat@runolfsdottir.io",
+            "password": "IsRm4YhPrG5bW92",
+            "administrador": "false",
+            "_id": "FMMlqgrIKOgG0WUl"
+        },
+        {
+            "nome": "rafa",
+            "email": "rafael@gmail.com",
+            "password": "12345",
+            "administrador": "true",
+            "_id": "IczPqQkNj5RzmC38"
+        },
+        {
+            "nome": "Lukotaz",
+            "email": "lukotaz@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "IyX9mM6YsBTa2Eow"
+        },
+        {
+            "email": "beltrano5@qa.com.br",
+            "nome": "dsfoif",
+            "password": "ksjfosdh",
+            "administrador": "true",
+            "_id": "L7llU7aPcAEcydLv"
+        },
+        {
+            "nome": "Erik20",
+            "email": "Carissa_Reinger@hotmail.com",
+            "password": "cV0qFT35WHUv3lh",
+            "administrador": "true",
+            "_id": "LwOM9FEPdMTaBenw"
+        },
+        {
+            "nome": "Clemens_Nicolas",
+            "email": "Drew25@gmail.com",
+            "password": "PMHgTKgp7FIVExQ",
+            "administrador": "true",
+            "_id": "MJpus3jns8GWamMe"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "N0ENzWBXC8uBFTDR"
+        },
+        {
+            "nome": "Micheal_Herzog7",
+            "email": "Dennis60@gmail.com",
+            "password": "_xDP3cViAa70EQZ",
+            "administrador": "true",
+            "_id": "N3qZbF07GDA6Uqwc"
+        },
+        {
+            "nome": "Nora31",
+            "email": "Ansley_Pouros95@yahoo.com",
+            "password": "0JHQ3otEw14bhOD",
+            "administrador": "true",
+            "_id": "N8kFRMeRPXdk0ZJt"
+        },
+        {
+            "nome": " da Silva",
+            "email": "beltrano@com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "OhxlpIdx5cd5TxCH"
+        },
+        {
+            "nome": "Felipe Cardoso",
+            "email": "felipeC@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "OjqsVRHxspcA0Gpg"
+        },
+        {
+            "nome": "Gabriel",
+            "email": "gabriel@gmail.com",
+            "password": "987654",
+            "administrador": "false",
+            "_id": "PTvj153hnPSTN5ZQ"
+        },
+        {
+            "nome": "ana",
+            "email": "ana@gmail.com.br",
+            "password": "a",
+            "administrador": "true",
+            "_id": "R6pUVfaZS5KWTbW6"
+        },
+        {
+            "nome": "Daniel da Silva dos Santos dos Santos",
+            "email": "danieldossantoscs@gmail.com",
+            "password": "010203",
+            "administrador": "true",
+            "_id": "RpHniR4LZVn7FcZ1"
+        },
+        {
+            "nome": "Khalil.McGlynn",
+            "email": "Sister.Murazik1@yahoo.com",
+            "password": "eQjZupIgEFwgY9c",
+            "administrador": "true",
+            "_id": "SgC6s3KNBhDx8bNs"
+        },
+        {
+            "nome": "teste",
+            "email": "teste@compass.com.br",
+            "password": "1234567",
+            "administrador": "false",
+            "_id": "TluPWhTMiPf4LCSK"
+        },
+        {
+            "nome": "maude",
+            "email": "oliver@gottlieb-pollich.io",
+            "password": "OrO6bRoR3",
+            "administrador": "false",
+            "_id": "V0M05Ff9SCotzzUV"
+        },
+        {
+            "nome": "osvaldo.hermiston",
+            "email": "jordon@jacobi-pacocha.io",
+            "password": "6XyDf2SdU9cQ7iP9",
+            "administrador": "false",
+            "_id": "VZB490wVjevnLbr3"
+        },
+        {
+            "nome": "Usuario sem ID",
+            "email": "usernoID@qa.com.br",
+            "password": "teste",
+            "administrador": "false",
+            "_id": "VZaygRvMphsfgnij"
+        },
+        {
+            "nome": "Elsa13",
+            "email": "Dangelo.Rau9@hotmail.com",
+            "password": "OEmcMxLLp2IQh9H",
+            "administrador": "true",
+            "_id": "YKYpaMK8BZUWqShp"
+        },
+        {
+            "nome": "sdfafasfilva",
+            "email": "beltranao@com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "Yc3HTKDGSxhiXNqc"
+        },
+        {
+            "nome": "tommie.wisoky",
+            "email": "lloyd@grant-pollich.com",
+            "password": "B2qQaOk3F",
+            "administrador": "false",
+            "_id": "Z4CYR3JX5NMDiKW1"
+        },
+        {
+            "nome": "Teste Gmail",
+            "email": "beltrano@gmail.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "Zsh1AZ2bn3f7uTc9"
+        },
+        {
+            "nome": "email@email.com.br",
+            "email": "email@email.com.br",
+            "password": "cpd*123",
+            "administrador": "false",
+            "_id": "aNuM8iZDua9kJxw4"
+        },
+        {
+            "nome": "Ruan Lima",
+            "email": "delimaruanf@gmail.com",
+            "password": "12345678",
+            "administrador": "true",
+            "_id": "c9cdWKY9HOikBLrO"
+        },
+        {
+            "nome": "ana",
+            "email": "ana@hotmail.com.br",
+            "password": "a",
+            "administrador": "true",
+            "_id": "cFpHhgHj3iIpSrlb"
+        },
+        {
+            "nome": "Ford.Upton99",
+            "email": "Elissa96@yahoo.com",
+            "password": "KxQvOQMf1gq6Z32",
+            "administrador": "true",
+            "_id": "fFPy4boepofNrw5R"
+        },
+        {
+            "nome": "Rubye33",
+            "email": "Kevin_Smitham@yahoo.com",
+            "password": "F7S5t9GLqOWpa4H",
+            "administrador": "true",
+            "_id": "ilt3Uwn5rs4KsevX"
+        },
+        {
+            "nome": "Dallin_Walter89",
+            "email": "Omari_Grant65@gmail.com",
+            "password": "WmiUQLtY56nBhJK",
+            "administrador": "true",
+            "_id": "iwoanEsVsP1A7FyY"
+        },
+        {
+            "nome": "Sr. Eduardo Cunha",
+            "email": "eloahfreitas@example.org",
+            "password": "CkGFra+(@7",
+            "administrador": "true",
+            "_id": "j5gFS8PoDJc1qx8R"
+        },
+        {
+            "nome": "alvina_watsica",
+            "email": "kent@nicolas-connelly.net",
+            "password": "Di3ZdXb0PcTaY",
+            "administrador": "false",
+            "_id": "ke9mjhWvO0rZg7WD"
+        },
+        {
+            "nome": "Batman",
+            "email": "patriotaeraa@gmail.com",
+            "password": "12345",
+            "administrador": "true",
+            "_id": "llm3YAby6lenYZUP"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "rubia@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "mtLMitNjfB1Yot23"
+        },
+        {
+            "nome": "Lillian.Gibson27",
+            "email": "Damon88@gmail.com",
+            "password": "fJDrqSkGfuLVjIB",
+            "administrador": "true",
+            "_id": "pjE2tZYhbwbREBPb"
+        },
+        {
+            "nome": "Scroll",
+            "email": "patriaae@gmail.com",
+            "password": "12345",
+            "administrador": "false",
+            "_id": "stBURNN8h0oZCGTW"
+        },
+        {
+            "nome": "Jane15",
+            "email": "Ada28@hotmail.com",
+            "password": "neCSUOc3PtfgOL9",
+            "administrador": "true",
+            "_id": "t7b3ptFcv3UCVBCp"
+        },
+        {
+            "nome": "Troca nome",
+            "email": "beltrano2@hotmail.com",
+            "password": "tes",
+            "administrador": "true",
+            "_id": "tI3N3FICZ9vKXtS0"
+        },
+        {
+            "nome": "bryanna.cruickshank",
+            "email": "claretha_ullrich@bechtelar-predovic.name",
+            "password": "X1b6VkUrKd19I0",
+            "administrador": "false",
+            "_id": "vGqzcYbTk5ubkqWO"
+        },
+        {
+            "nome": "Teste",
+            "email": "Bertrand@yahoo.com",
+            "password": "7GklY2RA9qswo4b",
+            "administrador": "true",
+            "_id": "vSHZRnj1xwG4TWDa"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "rubiaf@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "vuOokfBiGcv7lguo"
+        },
+        {
+            "nome": "João",
+            "email": "maiara.lindemaier01@gmail.com",
+            "password": "senha123",
+            "administrador": "false",
+            "_id": "wXnptgHCeCBKvP1l"
+        },
+        {
+            "nome": "Herbert.Huels",
+            "email": "Jonathon91@yahoo.com",
+            "password": "r1hHyhA9ubiSeAT",
+            "administrador": "true",
+            "_id": "xGmDjalbKu50USw2"
+        },
+        {
+            "nome": "Dameon.Denesik",
+            "email": "Eloise.Hackett@gmail.com",
+            "password": "ZADvQ0Q0m15nirG",
+            "administrador": "true",
+            "_id": "xX4iyS4egO7tr7HJ"
+        },
+        {
+            "nome": "matthew",
+            "email": "tiffiny@oconnell.org",
+            "password": "GvSsLhN",
+            "administrador": "false",
+            "_id": "yi89G5JQ6dENA3hQ"
+        },
+        {
+            "nome": "Beatriz",
+            "email": "beatriz@hotmail.com",
+            "password": "teste33",
+            "administrador": "true",
+            "_id": "z69ayq6jyyfGhOK1"
+        }
+    ]
+}
+
+19:18:15.176 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/GetUsuarios.feature
+19:20:03.617 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:20:03.621 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1665094803620
+19:20:03.630 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 25 - ^Listar usuario por nome e email e validar o nome do usuario retornado$
+19:20:04.317 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:20:04.664 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?nome=Felipe+Cardoso&email=felipeC%40qa.com
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:20:05.215 [main] DEBUG com.intuit.karate - response time in milliseconds: 542
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 26caf69e-b9f0-4e75-a1d8-982210872813
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 0a1f57c8e2ea9cde9956bf7cddb2a00b;o=1
+1 < Date: Thu, 06 Oct 2022 22:19:55 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 43
+{
+    "quantidade": 0,
+    "usuarios": []
+}
+
+19:20:05.239 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/GetUsuarios.feature:30
+And match response.usuarios[0].nome == 'luana assis'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'luana assis'
+
+src/test/java/features/usuarios/GetUsuarios.feature:30
+19:20:05.763 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/GetUsuarios.feature
+19:22:37.788 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:22:37.795 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1665094957794
+19:22:37.824 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^Cadastrar usuario com sucesso com body no corpo do teste$
+19:22:38.645 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:22:39.063 [main] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 95
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Felipe Cardoso","email":"felipeC@qa.com.br","password":"teste","administrador":"true"}
+
+19:22:39.626 [main] DEBUG com.intuit.karate - response time in milliseconds: 562
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 0844aeb2-809a-4913-9b77-8f673c768b38
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: fe3721d92c162a9c8a67fe792338b861;o=1
+1 < Date: Thu, 06 Oct 2022 22:22:30 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 53
+{
+    "message": "Este email já está sendo usado"
+}
+
+19:22:39.634 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:21
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 562, url: https://serverest.dev/usuarios, response: 
+{
+    "message": "Este email já está sendo usado"
+}
+src/test/java/features/usuarios/PostUsuario.feature:21
+19:22:40.192 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+19:22:52.563 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:22:52.567 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1665094972566
+19:22:52.590 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 24 - ^Cadastrar usuario com sucesso com body em arquivo json$
+19:22:53.281 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:22:53.323 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PostUsuario.feature:27
+* def body = read('classpath:/jsons/usuario.json')
+js failed:
+>>>>
+01: read('classpath:/jsons/usuario.json')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /jsons/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:118)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:128)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:102)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:56)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:129)
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PostUsuario.feature:27
+19:22:53.869 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PostUsuario.feature
+19:23:28.266 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:23:28.268 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1665095008268
+19:23:28.283 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^Alterar um usuario com socesso$
+19:23:28.959 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:23:28.993 [main] ERROR com.intuit.karate - src/test/java/features/usuarios/PutUsuario.feature:4
+* url dev
+js failed:
+>>>>
+01: dev
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "dev" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/features/usuarios/PutUsuario.feature:4
+19:23:29.510 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PutUsuario.feature
+19:23:56.866 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:23:56.869 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1665095036869
+19:23:56.892 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^Alterar um usuario com socesso$
+19:23:57.582 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:23:57.959 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://serverest.dev/usuarios/OjqsVRHxspcA0Gpg
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 95
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Felipe Cardoso","email":"felipeC@qa.com.br","password":"teste","administrador":"true"}
+
+19:23:58.474 [main] DEBUG com.intuit.karate - response time in milliseconds: 514
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 3677c1bb-cd98-4bcd-95a3-b1ef16db3df3
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 57c56cfc6722446d31172eb5179551dd
+1 < Date: Thu, 06 Oct 2022 22:23:49 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 50
+{
+    "message": "Registro alterado com sucesso"
+}
+
+19:23:59.008 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/PutUsuario.feature
+19:24:36.605 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:24:36.609 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1665095076609
+19:24:36.628 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7 - ^Listar todos os usuarios cadastrados$
+19:24:37.375 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:24:37.708 [main] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:24:38.292 [main] DEBUG com.intuit.karate - response time in milliseconds: 579
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < x-moesif-transaction-id: 94413e54-8280-494b-aa63-69369dcb877e
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 9a41c2b7e999abd5f3fdf227a09edc63
+1 < Date: Thu, 06 Oct 2022 22:24:28 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 13728
+{
+    "quantidade": 64,
+    "usuarios": [
+        {
+            "nome": "Abbey36",
+            "email": "Bertrand.Boyle18@yahoo.com",
+            "password": "7GklY2RA9qswo4b",
+            "administrador": "true",
+            "_id": "0W0vxH4AJIRbp4Aq"
+        },
+        {
+            "nome": "Armani50",
+            "email": "Andre_Gulgowski@yahoo.com",
+            "password": "c0hCW7O83C_cOWo",
+            "administrador": "true",
+            "_id": "0dlwgTCVs1jxp1kR"
+        },
+        {
+            "nome": "Johnny35",
+            "email": "Haylie_OHara@gmail.com",
+            "password": "LU_Wf8Gq4Up1z7k",
+            "administrador": "true",
+            "_id": "0nX3dqxulyziBSDx"
+        },
+        {
+            "nome": "Teste Hotmail",
+            "email": "beltrano@hotmail.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "1DN9toOiAIiwR2TJ"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@a.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "1tRScth1Zolzr22n"
+        },
+        {
+            "nome": "Earl_Lakin",
+            "email": "Mary.Corkery87@yahoo.com",
+            "password": "JTozJbiPiTL2rnG",
+            "administrador": "true",
+            "_id": "3AcvhZqXy5DkP8Vn"
+        },
+        {
+            "nome": "ana",
+            "email": "ana@qa.com.br",
+            "password": "a",
+            "administrador": "true",
+            "_id": "3X09S6gRmkrLeASu"
+        },
+        {
+            "nome": "claudio",
+            "email": "teste@gmail.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "5ZGXrJJa9DNkajqk"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrana@qa.com.br",
+            "password": "tes",
+            "administrador": "true",
+            "_id": "5s0ExcFilcMFiAWJ"
+        },
+        {
+            "nome": "Pattie.Hand63",
+            "email": "Brett.Johns@gmail.com",
+            "password": "Q8VsfmyGs42AoCb",
+            "administrador": "true",
+            "_id": "5ytrcWUoJ1jiEhBa"
+        },
+        {
+            "nome": "Roxane.Toy73",
+            "email": "Jaylon_Schamberger48@gmail.com",
+            "password": "bTok6ZwIDY8afz9",
+            "administrador": "true",
+            "_id": "7jZIxpiTHgFd5Fn1"
+        },
+        {
+            "nome": "lala",
+            "email": "ll@la.com",
+            "password": "alal",
+            "administrador": "true",
+            "_id": "9ZRdjSmQLmJJ4Cfs"
+        },
+        {
+            "email": "beltro5@qa.com.br",
+            "nome": "dsfoif",
+            "password": "ksjfosdh",
+            "administrador": "true",
+            "_id": "AHVWe8EBq12D8ndo"
+        },
+        {
+            "nome": "Frederik29",
+            "email": "Alan.Bradtke18@yahoo.com",
+            "password": "X0wDwa6TmXAIWXb",
+            "administrador": "true",
+            "_id": "AJ5mjxE4mek7wzHL"
+        },
+        {
+            "nome": "Teste",
+            "email": "patriotaerfakeeee@gmail.com",
+            "password": "12345",
+            "administrador": "false",
+            "_id": "Af070F90fbYme43k"
+        },
+        {
+            "nome": "Evangeline_Harris",
+            "email": "Alaina37@hotmail.com",
+            "password": "0J5d4Y0gubpSK9o",
+            "administrador": "true",
+            "_id": "DY7F5CfZ17rb5Wbb"
+        },
+        {
+            "nome": "natalia qca",
+            "email": "nataliaqcao@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "EoqAeSaLaMpukpU5"
+        },
+        {
+            "nome": "aubrey.lebsack",
+            "email": "ramona.weissnat@runolfsdottir.io",
+            "password": "IsRm4YhPrG5bW92",
+            "administrador": "false",
+            "_id": "FMMlqgrIKOgG0WUl"
+        },
+        {
+            "nome": "rafa",
+            "email": "rafael@gmail.com",
+            "password": "12345",
+            "administrador": "true",
+            "_id": "IczPqQkNj5RzmC38"
+        },
+        {
+            "nome": "Lukotaz",
+            "email": "lukotaz@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "IyX9mM6YsBTa2Eow"
+        },
+        {
+            "nome": "usuario",
+            "email": "usuario@teste.com",
+            "password": "010203",
+            "administrador": "false",
+            "_id": "Jf6apO1PH1jEKdIx"
+        },
+        {
+            "email": "beltrano5@qa.com.br",
+            "nome": "dsfoif",
+            "password": "ksjfosdh",
+            "administrador": "true",
+            "_id": "L7llU7aPcAEcydLv"
+        },
+        {
+            "nome": "Erik20",
+            "email": "Carissa_Reinger@hotmail.com",
+            "password": "cV0qFT35WHUv3lh",
+            "administrador": "true",
+            "_id": "LwOM9FEPdMTaBenw"
+        },
+        {
+            "nome": "Clemens_Nicolas",
+            "email": "Drew25@gmail.com",
+            "password": "PMHgTKgp7FIVExQ",
+            "administrador": "true",
+            "_id": "MJpus3jns8GWamMe"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "N0ENzWBXC8uBFTDR"
+        },
+        {
+            "nome": "Micheal_Herzog7",
+            "email": "Dennis60@gmail.com",
+            "password": "_xDP3cViAa70EQZ",
+            "administrador": "true",
+            "_id": "N3qZbF07GDA6Uqwc"
+        },
+        {
+            "nome": "Nora31",
+            "email": "Ansley_Pouros95@yahoo.com",
+            "password": "0JHQ3otEw14bhOD",
+            "administrador": "true",
+            "_id": "N8kFRMeRPXdk0ZJt"
+        },
+        {
+            "nome": " da Silva",
+            "email": "beltrano@com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "OhxlpIdx5cd5TxCH"
+        },
+        {
+            "nome": "Felipe Cardoso",
+            "email": "felipeC@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "OjqsVRHxspcA0Gpg"
+        },
+        {
+            "nome": "Gabriel",
+            "email": "gabriel@gmail.com",
+            "password": "987654",
+            "administrador": "false",
+            "_id": "PTvj153hnPSTN5ZQ"
+        },
+        {
+            "nome": "ana",
+            "email": "ana@gmail.com.br",
+            "password": "a",
+            "administrador": "true",
+            "_id": "R6pUVfaZS5KWTbW6"
+        },
+        {
+            "nome": "Daniel da Silva dos Santos dos Santos",
+            "email": "danieldossantoscs@gmail.com",
+            "password": "010203",
+            "administrador": "true",
+            "_id": "RpHniR4LZVn7FcZ1"
+        },
+        {
+            "nome": "Khalil.McGlynn",
+            "email": "Sister.Murazik1@yahoo.com",
+            "password": "eQjZupIgEFwgY9c",
+            "administrador": "true",
+            "_id": "SgC6s3KNBhDx8bNs"
+        },
+        {
+            "nome": "teste",
+            "email": "teste@compass.com.br",
+            "password": "1234567",
+            "administrador": "false",
+            "_id": "TluPWhTMiPf4LCSK"
+        },
+        {
+            "nome": "maude",
+            "email": "oliver@gottlieb-pollich.io",
+            "password": "OrO6bRoR3",
+            "administrador": "false",
+            "_id": "V0M05Ff9SCotzzUV"
+        },
+        {
+            "nome": "osvaldo.hermiston",
+            "email": "jordon@jacobi-pacocha.io",
+            "password": "6XyDf2SdU9cQ7iP9",
+            "administrador": "false",
+            "_id": "VZB490wVjevnLbr3"
+        },
+        {
+            "nome": "Usuario sem ID",
+            "email": "usernoID@qa.com.br",
+            "password": "teste",
+            "administrador": "false",
+            "_id": "VZaygRvMphsfgnij"
+        },
+        {
+            "nome": "Elsa13",
+            "email": "Dangelo.Rau9@hotmail.com",
+            "password": "OEmcMxLLp2IQh9H",
+            "administrador": "true",
+            "_id": "YKYpaMK8BZUWqShp"
+        },
+        {
+            "nome": "sdfafasfilva",
+            "email": "beltranao@com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "Yc3HTKDGSxhiXNqc"
+        },
+        {
+            "nome": "tommie.wisoky",
+            "email": "lloyd@grant-pollich.com",
+            "password": "B2qQaOk3F",
+            "administrador": "false",
+            "_id": "Z4CYR3JX5NMDiKW1"
+        },
+        {
+            "nome": "Teste Gmail",
+            "email": "beltrano@gmail.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "Zsh1AZ2bn3f7uTc9"
+        },
+        {
+            "nome": "email@email.com.br",
+            "email": "email@email.com.br",
+            "password": "cpd*123",
+            "administrador": "false",
+            "_id": "aNuM8iZDua9kJxw4"
+        },
+        {
+            "nome": "Ruan Lima",
+            "email": "delimaruanf@gmail.com",
+            "password": "12345678",
+            "administrador": "true",
+            "_id": "c9cdWKY9HOikBLrO"
+        },
+        {
+            "nome": "ana",
+            "email": "ana@hotmail.com.br",
+            "password": "a",
+            "administrador": "true",
+            "_id": "cFpHhgHj3iIpSrlb"
+        },
+        {
+            "nome": "Ford.Upton99",
+            "email": "Elissa96@yahoo.com",
+            "password": "KxQvOQMf1gq6Z32",
+            "administrador": "true",
+            "_id": "fFPy4boepofNrw5R"
+        },
+        {
+            "nome": "Rubye33",
+            "email": "Kevin_Smitham@yahoo.com",
+            "password": "F7S5t9GLqOWpa4H",
+            "administrador": "true",
+            "_id": "ilt3Uwn5rs4KsevX"
+        },
+        {
+            "nome": "Dallin_Walter89",
+            "email": "Omari_Grant65@gmail.com",
+            "password": "WmiUQLtY56nBhJK",
+            "administrador": "true",
+            "_id": "iwoanEsVsP1A7FyY"
+        },
+        {
+            "nome": "Sr. Eduardo Cunha",
+            "email": "eloahfreitas@example.org",
+            "password": "CkGFra+(@7",
+            "administrador": "true",
+            "_id": "j5gFS8PoDJc1qx8R"
+        },
+        {
+            "nome": "alvina_watsica",
+            "email": "kent@nicolas-connelly.net",
+            "password": "Di3ZdXb0PcTaY",
+            "administrador": "false",
+            "_id": "ke9mjhWvO0rZg7WD"
+        },
+        {
+            "nome": "Batman",
+            "email": "patriotaeraa@gmail.com",
+            "password": "12345",
+            "administrador": "true",
+            "_id": "llm3YAby6lenYZUP"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "rubia@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "mtLMitNjfB1Yot23"
+        },
+        {
+            "nome": "Lillian.Gibson27",
+            "email": "Damon88@gmail.com",
+            "password": "fJDrqSkGfuLVjIB",
+            "administrador": "true",
+            "_id": "pjE2tZYhbwbREBPb"
+        },
+        {
+            "nome": "Scroll",
+            "email": "patriaae@gmail.com",
+            "password": "12345",
+            "administrador": "false",
+            "_id": "stBURNN8h0oZCGTW"
+        },
+        {
+            "nome": "Jane15",
+            "email": "Ada28@hotmail.com",
+            "password": "neCSUOc3PtfgOL9",
+            "administrador": "true",
+            "_id": "t7b3ptFcv3UCVBCp"
+        },
+        {
+            "nome": "Troca nome",
+            "email": "beltrano2@hotmail.com",
+            "password": "tes",
+            "administrador": "true",
+            "_id": "tI3N3FICZ9vKXtS0"
+        },
+        {
+            "nome": "bryanna.cruickshank",
+            "email": "claretha_ullrich@bechtelar-predovic.name",
+            "password": "X1b6VkUrKd19I0",
+            "administrador": "false",
+            "_id": "vGqzcYbTk5ubkqWO"
+        },
+        {
+            "nome": "Teste",
+            "email": "Bertrand@yahoo.com",
+            "password": "7GklY2RA9qswo4b",
+            "administrador": "true",
+            "_id": "vSHZRnj1xwG4TWDa"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "rubiaf@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "vuOokfBiGcv7lguo"
+        },
+        {
+            "nome": "gerente",
+            "email": "gerente@teste.com",
+            "password": "010203",
+            "administrador": "true",
+            "_id": "vzsFxGCCNnJlFkoi"
+        },
+        {
+            "nome": "João",
+            "email": "maiara.lindemaier01@gmail.com",
+            "password": "senha123",
+            "administrador": "false",
+            "_id": "wXnptgHCeCBKvP1l"
+        },
+        {
+            "nome": "Herbert.Huels",
+            "email": "Jonathon91@yahoo.com",
+            "password": "r1hHyhA9ubiSeAT",
+            "administrador": "true",
+            "_id": "xGmDjalbKu50USw2"
+        },
+        {
+            "nome": "Dameon.Denesik",
+            "email": "Eloise.Hackett@gmail.com",
+            "password": "ZADvQ0Q0m15nirG",
+            "administrador": "true",
+            "_id": "xX4iyS4egO7tr7HJ"
+        },
+        {
+            "nome": "matthew",
+            "email": "tiffiny@oconnell.org",
+            "password": "GvSsLhN",
+            "administrador": "false",
+            "_id": "yi89G5JQ6dENA3hQ"
+        },
+        {
+            "nome": "Beatriz",
+            "email": "beatriz@hotmail.com",
+            "password": "teste33",
+            "administrador": "true",
+            "_id": "z69ayq6jyyfGhOK1"
+        }
+    ]
+}
+
+19:24:38.856 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/usuarios/GetUsuarios.feature

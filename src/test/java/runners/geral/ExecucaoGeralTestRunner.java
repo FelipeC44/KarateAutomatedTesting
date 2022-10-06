@@ -1,4 +1,4 @@
-package runners;
+package runners.geral;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
